@@ -2,6 +2,7 @@
     padding: 3em 10em;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
 }
 
 .container h3 {
@@ -12,7 +13,6 @@
 }
 
 .mesage {
-    grid-area: mesage;
     display: flex;
     flex-direction: column;
     gap: .5em;
@@ -38,14 +38,14 @@
     gap: 1em;
 }
 
-.contatos p {
+.contatos p, .contatos h3 {
     display: flex;
     gap: .3em;
-    margin-left: 7em;
+    margin-left: 150px;
 }
 
 .icone {
-    font-size: 2em;
+    font-size: 1.5em;
     margin-right: .1em;
     background-color: var(--amarelo-claro);
     padding: .15em;
@@ -54,4 +54,40 @@
 
 .contatos span {
     font-weight: 500;
+}
+
+@media (max-width: 1260px) {
+    .container {
+        padding: 3em 7.5em;
+    }
+
+    .contatos p, .contatos h3 {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 1060px) {
+    .container {
+        padding: 3em 5em;
+    }
+}
+
+@media (max-width: 950px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .container form {
+        padding: 0 3em;
+    }
+
+    .contatos {
+        align-self: center;
+    }
+    
+    .contatos p, .contatos h3 {
+        margin-left: 0;
+    }
 }

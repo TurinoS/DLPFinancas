@@ -1,7 +1,26 @@
-.container div {
-    padding: 1em 2em;
+.container section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em 1em;
 }
 
-.container div h2 {
-    margin-left: 3em;
+h1 {
+    margin: 1em 0 0 3em;
+    color: var(--amarelo-escuro);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border: 1px solid var(--amarelo-escuro);
+    border-radius: 24px;
+    box-shadow: 0px 6px 6px 6px rgba(0, 0, 0, .5);
+    padding: 1em 2em;
+    width: 40vw;
+}
+
+.formulario h2 {
+    text-align: center;
+    color: var(--amarelo-escuro);
 }

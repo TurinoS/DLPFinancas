@@ -25,6 +25,10 @@
     color: var(--amarelo);
 }
 
+.header a:hover {
+    font-weight: 600;
+}
+
 @media (max-width: 720px) {
     .header ul {
         margin-right: 1em;
