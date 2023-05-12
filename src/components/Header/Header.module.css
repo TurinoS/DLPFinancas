@@ -1,0 +1,32 @@
+.header {
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 3em;
+    background-color: var(--preto);
+}
+
+.header img {
+    width: 80%;
+}
+
+.header ul {
+    display: flex;
+    gap: 2em;
+    list-style: none;
+    font-size: 24px;
+    margin-right: 5em;
+}
+
+.header a {
+    text-decoration: none;
+    color: var(--amarelo);
+}
+
+@media (max-width: 720px) {
+    .header ul {
+        margin-right: 1em;
+    }
+}

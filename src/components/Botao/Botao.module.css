@@ -1,0 +1,19 @@
+.btn {
+    padding: 12px 20px;
+    align-self: center;
+    background-color: var(--preto);
+    color: var(--amarelo);
+    font-size: 16px;
+    border-radius: 12px;
+    font-weight: 600;
+    border-color: var(--amarelo);
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: var(--preto);
+    background-color: var(--amarelo);
+    border-color: var(--preto);
+    font-weight: 600;
+    transition: 1s;
+}

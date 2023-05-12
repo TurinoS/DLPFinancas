@@ -1,0 +1,15 @@
+.footer {
+    width: 100vw;
+    box-sizing: border-box;
+    text-align: end;
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 1em 4em;
+    position: relative;
+    bottom: 0;
+}
+
+.footer span {
+    color: var(--amarelo);
+    font-weight: 600;
+}

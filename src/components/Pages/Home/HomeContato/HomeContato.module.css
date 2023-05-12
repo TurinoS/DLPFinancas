@@ -1,0 +1,46 @@
+.container {
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    padding: 4em 15em 3em 15em;
+}
+
+.card {
+    background-color: var(--amarelo);
+    padding: .5em 3em 1.5em 3em;
+    border-radius: 2em;
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, .5);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas: 
+    "titulo btn"
+    "texto btn";
+    align-items: center;
+    column-gap: 3em;
+}
+
+.btn {
+    grid-area: btn;
+    justify-self: center;
+}
+
+.card h3 {
+    grid-area: titulo;
+    color: var(--amarelo-escuro);
+    font-size: 28px;
+    margin: 0;
+}
+
+.card p {
+    grid-area: texto;
+    margin-top: 0px;
+    font-weight: 500;
+}
+
+@media (max-width: 890px) {
+    .container {
+        padding: 2em 7em 3em 7em;
+    }
+}
