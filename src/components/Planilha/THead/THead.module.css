@@ -1,0 +1,13 @@
+thead {
+    color: var(--amarelo-escuro);
+    background-color: var(--amarelo);
+}
+
+th {
+    border: 1px solid var(--preto);
+    padding: .5em;
+}
+
+.coluna2 {
+    width: 70%;
+}
